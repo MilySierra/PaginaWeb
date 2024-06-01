@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app 
+    xmlns="https://jakarta.ee/xml/ns/jakartaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+    version="6.0">
+
+  <display-name>Proyecto final</display-name>
+
+  <servlet>
+        <servlet-name>CrearCuentaServlet</servlet-name>
+        <servlet-class>com.udea.servlets.CrearCuentaServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CrearCuentaServlet</servlet-name>
+        <url-pattern>/CrearCuentaServlet</url-pattern>
+    </servlet-mapping>
+
+      <servlet>
+        <servlet-name>transferenciaServlet</servlet-name>
+        <servlet-class>com.udea.servlets.transferenciaServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>transferenciaServlet</servlet-name>
+        <url-pattern>/transferenciaServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CuentaServlet</servlet-name>
+        <servlet-class>com.example.CuentaServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CuentaServlet</servlet-name>
+        <url-pattern>*.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>CuentaServlet</servlet-name>
+        <url-pattern>/inf</url-pattern>
+    </servlet-mapping>
+    
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
